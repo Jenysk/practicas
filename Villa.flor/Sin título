@@ -1,0 +1,42 @@
+< html >
+< head >
+	< meta  charset = " utf-8 " >
+	< title > Lienzo de dibujo </ title >
+	< link  rel = " stylesheet "  type = " text / css "  href = " http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css " >
+	< style  type = " text / css " >
+	lienzo {
+		borde : 1 px  sólido  # 000 ;
+	}
+	< / style >
+	<! - script src = "http://d3js.org/d3.v3.min.js" charset = "utf-8"> </ script ->
+</ head >
+< cuerpo >
+	< div  class = " contenedor text-center " >
+		< Lona  Identificación = " lienzo " > </ lienzo > < br >
+	</ div >
+	< div  class = " contenedor text-center " >
+		< form  class = " col-md-4 " >
+			< input  type = " button "  class = " btn btn-danger "  value = " rojo "  id = " rojo "  onclick = " color_rojo (); " >
+			< input  type = " button "  class = " btn btn-success "  value = " verde "  id = " verde "  onclick = " color_verde (); " >
+			< input  type = " button "  class = " btn btn-info "  value = " azul "  id = " azul "  onclick = " color_azul (); " >
+			< input  type = " button "  class = " btn btn-default "  value = " Borrar "  id = " borrar_id "  onclick = " borrar (); " >
+		</ form >
+		< form  class = " col-md-7 " >
+			< mesa >
+				< tbody >
+					< tr  class = " info " >
+						< td > Tamaño del punto: </ td >
+						< td  id = " tamano_punto " > </ td >
+						< td > < input  type = " button "  class = " btn btn btn-primary "  value = " + "  id = " aumenta "  onclick = " aumentar (); " > </ td >
+						< td > < input  type = " button "  class = " btn btn btn-primary "  value = " - "  id = " minutes "  onclick = " disminuir (); " > </ td >
+					</ tr >
+				</ tbody >
+
+			</ table >
+
+		</ form >
+
+	</ div >
+	< script  type = " text / javascript "  src = " scripts.js " > < / script >
+</ body >
+</ html >
